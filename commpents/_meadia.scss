@@ -1,0 +1,109 @@
+@media (min-width: 1000px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    row-gap: 8rem;
+  }
+  .section {
+    grid-template-columns: 1fr;
+  }
+  .bio__heading::after {
+    display: none;
+  }
+  .bio__pic-content {
+    grid-row: 1;
+    justify-self: center;
+    margin-bottom: 15rem;
+  }
+  .skills__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects__main {
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
+    justify-items: center;
+  }
+  .projects__data {
+    text-align: center;
+  }
+  .projects__data:nth-of-type(2) {
+    order: 1;
+  }
+  .clients {
+    padding: 0;
+  }
+  .clients__opinions {
+    font-size: 20px;
+  }
+  .contact {
+    row-gap: 6rem;
+  }
+  .contact__info {
+    // width: 500px;
+    justify-items: center;
+    text-align: center;
+  }
+  .contant__formation {
+    order: -1;
+    justify-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .header-flex::before {
+    z-index: 0;
+  }
+  .bio__pic {
+    left: 0px;
+  }
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+    align-self: center;
+    cursor: pointer;
+  }
+  .burger-menu__bar {
+    width: 4.375rem;
+    height: 0.3rem;
+    background-color: var(--color-text);
+    transition: all 0.3s ease-in-out;
+  }
+  .menu__checkd:checked + .navgition {
+    top: 100%;
+  }
+  .header-flex:has(.menu__checkd:checked) .burger-menu__bar:nth-child(1) {
+    transform: translateY(10px) rotate(40deg);
+  }
+  .header-flex:has(.menu__checkd:checked) .burger-menu__bar:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .header-flex:has(.menu__checkd:checked) .burger-menu__bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-40deg);
+  }
+  .navgition {
+    background-color: aliceblue;
+    position: absolute;
+    padding: 3rem 0;
+    // width: 100%;
+    top: 0;
+    border-bottom: 0.1rem solid var(--color-text);
+    z-index: -1;
+    width: 100vw;
+  }
+  .navgition__list {
+    justify-content: center;
+    font-size: 10px;
+  }
+  .toggle {
+    padding: 3rem 0;
+    z-index: 1;
+  }
+  .section--with-bg::before {
+    width: 100%;
+  }
+}

@@ -1,0 +1,110 @@
+@import "./mixing";
+.contact {
+  @include towCoulmns(
+    $grid-template-columns: repeat(2, 1fr),
+    $column-gap: 20rem
+  );
+  align-items: center;
+}
+.contact__info {
+  align-self: center;
+}
+.contact__description {
+  font-size: 20px;
+  line-height: 1.9;
+  color: var(--color-text);
+}
+.contact__email {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 2.5rem 0;
+}
+.contant__nav {
+  display: flex;
+}
+.contant__linkes {
+  margin-right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.contant__linkes:hover {
+  transform: scale(1.2);
+}
+.contant__form {
+  display: flex;
+  gap: 3rem;
+}
+.contant__input {
+  flex: 1;
+  border: none;
+  outline: 0;
+  border-bottom: 1px solid var(--color-dark-grey);
+  color: var(--color-text);
+  background-color: var(--color-none);
+  padding: 5px 0 0 10px;
+}
+.contant__massage {
+  width: 100%;
+  margin-top: 4rem;
+}
+.contant__but {
+  background-color: var(--color-box-img);
+  color: var(--color-background);
+  padding: 1.7rem 1.8rem;
+  font-family: var(--font-family-raleway);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 3.4rem;
+}
+.contant__but:hover {
+  background-color: var(--color-text);
+}
+form:invalid::after {
+  content: "*";
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff0000;
+}
+.comdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family-raleway);
+  color: var(--color-dark-green);
+}
+.comdown__h2 {
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.condown__flex {
+  padding-top: 50px;
+  display: flex;
+  gap: 20rem;
+  text-align: center;
+}
+.condown__day {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 800;
+}
+.condown__hour {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 800;
+}
+.condown__mount {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 800;
+}
+.condown__secand {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 800;
+}

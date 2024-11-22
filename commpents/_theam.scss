@@ -1,0 +1,10 @@
+/* Start Teame*/
+html:has(.toggel__checkbox:checked) {
+  --color-background: var(--color-black);
+  --color-text: var(--color-white);
+  --color-link-bg: var(--color-green);
+  --color-box-img: var(--color-green);
+  --color-none: rgb(255 255 255 / 20%);
+  --box-shadow: rgba(250, 250, 250, 0.2);
+}
+/* End Teame*/

@@ -1,0 +1,85 @@
+// start global
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 11rem;
+}
+body,
+[type="submit"] {
+  font-size: 1.6rem;
+  font-family: var(--font-family-raleway);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  border: 0;
+}
+.container {
+  display: grid;
+  row-gap: 11rem;
+  margin: 0 auto;
+  max-width: calc(var(--container-width) + calc(var(--gutter) * 2));
+  padding-inline: var(--gutter);
+}
+.video__loop {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.08;
+  z-index: -1;
+}
+.section {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: start;
+  position: relative;
+  // column-gap: 40px;
+}
+.section--with-bg {
+  padding: 11rem 0;
+}
+.section--with-bg::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  background-color: var(--color-background);
+  justify-self: center;
+  z-index: -1;
+}
+.h2-heading {
+  font-size: 65px;
+  font-weight: bold;
+  grid-column: 1/-1;
+  margin-bottom: 8.7rem;
+  text-transform: uppercase;
+  position: relative;
+}
+.h2-heading__spaec::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 152px;
+  background-color: var(--color-dark-green);
+  left: -7px;
+}
+.h2-heading__spaecing::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 120px;
+  background-color: var(--color-dark-green);
+  left: -7px;
+}
+.h3-heading {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+}
+.border-blue {
+  border-bottom: 1px solid #143ce8;
+}
+.border-red {
+  border-bottom: 1px solid var(--color-red);
+}
+// End global

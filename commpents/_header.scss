@@ -1,0 +1,107 @@
+.header-flex {
+  padding: 3rem 0; /* ✅ */
+  display: flex; /* ✅ */
+  justify-content: center; /* ✅ */
+  position: sticky;
+  top: 0;
+  background-color: var(--color-background);
+  z-index: 1;
+}
+.header-flex::before {
+  content: ""; /* ✅ */
+  position: absolute; /* ✅ */
+  z-index: -1; /* ✅ */
+  height: 100%; /* ✅ */
+  width: 100vw; /* ✅ */
+  border-bottom: 0.1rem solid var(--color-input-border); /* ✅ */
+  background-color: var(--color-background);
+  /* top: 0rem; ✅ */
+  top: 0.1rem;
+}
+.navigation {
+  transition: all 2s ease-in-out; /* for responsive screens */
+  background-color: var(--color-background); /* for responsive screens */
+}
+.navgition__list {
+  display: flex;
+  gap: 2rem; /* ✅ */
+}
+.navgition__link:link,
+.navgition__link:visited {
+  margin-right: 2rem;
+  font-weight: bold;
+}
+.navgition__link:hover,
+.navgition__link:active {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+.container:has(#bio:target) .navgition__bio {
+  color: var(--color-darker-blue);
+  text-decoration: underline;
+  font-weight: bold;
+}
+.container:has(#skills:target) .navgition__skills {
+  color: var(--color-darker-blue);
+  text-decoration: underline;
+  font-weight: bold;
+}
+.container:has(#projects:target) .navgition__projects {
+  color: var(--color-darker-blue);
+  text-decoration: underline;
+  font-weight: bold;
+}
+.container:has(#clients:target) .navgition__clients {
+  color: var(--color-darker-blue);
+  text-decoration: underline;
+  font-weight: bold;
+}
+.container:has(#contact:target) .navgition__contact {
+  color: var(--color-darker-blue);
+  text-decoration: underline;
+  font-weight: bold;
+}
+.menu__checkd {
+  display: none;
+}
+
+/* toggle */
+.toggel {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+.toggel__tltle {
+  font-weight: bold;
+  font-size: 18px;
+}
+.toggel__checkbox {
+  display: none;
+}
+.toggel__label {
+  display: block;
+  position: relative;
+  background-color: var(--color-black);
+  width: 50px;
+  height: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 3px 4px;
+  transition: 0.3s;
+}
+.toggel__label::after {
+  position: absolute;
+  content: "\f058";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  left: 0px;
+  color: var(--color-white);
+  transition: 0.3s;
+}
+.toggel__checkbox:checked + .toggel__label {
+  background-color: var(--color-white);
+}
+.toggel__checkbox:checked + .toggel__label::after {
+  color: var(--color-green);
+  left: 30px;
+}

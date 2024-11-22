@@ -1,0 +1,5 @@
+@mixin towCoulmns($grid-template-columns: 0, $column-gap: 0, $row-gap: 0) {
+  grid-template-columns: $grid-template-columns;
+  column-gap: $column-gap;
+  row-gap: $row-gap;
+}

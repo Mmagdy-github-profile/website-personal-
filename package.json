@@ -1,0 +1,22 @@
+{
+  "name": "advansid-css-project",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "eslint": "^9.9.1",
+    "globals": "^15.9.0",
+    "parcel": "^2.12.0",
+    "typescript-eslint": "^8.3.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

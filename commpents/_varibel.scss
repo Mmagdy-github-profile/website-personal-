@@ -1,0 +1,27 @@
+:root {
+  --container-width: 130rem;
+  --gutter: 2rem;
+
+  --color-black: #000;
+  --color-white: #fff;
+  --color-blue: #2374e1;
+  --color-light-blue: #1d9bfa;
+  --color-dark-blue: #0a66c2;
+  --color-darker-blue: #143ce8;
+  --color-red: #ff0000;
+  --color-green: #03a696;
+  --color-grey: #f6f6f6;
+  --color-dark-grey: #c6c6c6;
+  --color-dark-green: #42959b;
+  --box-shadow: rgba(0, 0, 0, 0.2);
+
+  --color-background: var(--color-grey);
+  --color-text: var(--color-black);
+  --color-box-img: var(--color-black);
+  --color-link-bg: var(--color-black);
+  --color-input-border: var(--color-black);
+
+  --font-family-raleway: "Raleway", sans-serif;
+  --font-family-poppins: "Poppins", sans-serif;
+  --font-awesome: "Font Awesome 6 Free";
+}

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta lang="en" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awoseme -->
+    <link rel="stylesheet" href="fonts/all.css" />
+    <link rel="stylesheet" href="fonts/all.min.css" />
+    <!-- End Font Awoseme -->
+    <!-- start fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End fonts google -->
+    <!-- Start fonts google tow-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End fonts google tow-->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Mostafa Magdy</title>
+  </head>
+  <body>
+    <div class="container">
+      <video class="video__loop" autoplay loop>
+        <source src="./video/كود.mp4" />
+      </video>
+      <header class="header-flex">
+        <label class="burger-menu" for="menu" dir="rtl">
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+        </label>
+        <input id="menu" class="menu__checkd" type="checkbox" />
+        <nav class="navgition">
+          <ul class="navgition__list">
+            <li>
+              <a class="navgition__link navgition__bio" href="#bio">bio</a>
+            </li>
+            <li>
+              <a class="navgition__link navgition__skills" href="#skills"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a class="navgition__link navgition__projects" href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a class="navgition__link navgition__clients" href="#clients"
+                >My Clients</a
+              >
+            </li>
+            <li>
+              <a class="navgition__link navgition__contact" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="toggel">
+          <h3 class="toggel__tltle">Swith Theme</h3>
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="checkbox"
+            class="toggel__checkbox"
+          />
+          <label
+            for="checkbox"
+            class="toggel__label"
+            role="button"
+            tabindex="0"
+          ></label>
+        </div>
+      </header>
+      <section id="bio" class="bio section">
+        <div class="bio__date">
+          <h1 class="bio__heading">
+            Hi There, I'm A Passionate Software Engineer
+          </h1>
+          <p class="bio__broject">
+            My Name Is <span class="bio__user">Mostafa Magdy</span>, a
+            co-founder of
+            <a class="bio__almdrasa" target="_blank" href="https://almdrasa.com"
+              >Almdrasa.com</a
+            >, Software Engineer and a content creator Who publish content on
+            <a class="bio__facebook" target="_blank" href="https://facebook.com"
+              >Facebook</a
+            >,
+            <a class="bio__twitter" target="_blank" href="https://twitter.com"
+              >Twitter</a
+            >,
+            <a class="bio__linkedin" target="_blank" href="https://linkedin.com"
+              >Linkedin</a
+            >
+            and
+            <a class="bio__youtube" target="_blank" href="https://youtube.com"
+              >Youtube</a
+            >.
+          </p>
+          <a href="#contact" class="bio__link say-hi-link">Say Hi</a>
+          <a href="#" class="bio__link find-out-link"
+            >Download CV <span class="bio__arrow">&darr; Go</span></a
+          >
+        </div>
+        <div class="bio__pic-content">
+          <img
+            class="bio__pic"
+            src="images/Mostafa 1.png"
+            alt="Photo Mostafa Magdy"
+            loading="lazy"
+          />
+        </div>
+      </section>
+      <section id="skills" class="skills section section--with-bg">
+        <h2 class="h2-heading h2-heading__spaecing">Skills</h2>
+        <div class="skills__filters">
+          <button
+            class="skills__button skills__button--isActive"
+            data-type="all"
+          >
+            All
+          </button>
+          <button class="skills__button" data-type="frontend">Frontend</button>
+          <button class="skills__button" data-type="backend">Backend</button>
+        </div>
+        <!-- <ul class="skills__list">
+          <li data-name="Html" class="skills_items">
+            <div>
+              <h2 class="skills__title">Html</h2>
+              <span class="skills__years">8 years</span>
+            </div>
+            <i class="fa-brands fa-html5 skills__icon"></i>
+          </li>
+          <li data-name="Css" class="skills_items">
+            <div>
+              <h2 class="skills__title">Css</h2>
+              <span class="skills__years">8 years</span>
+            </div>
+            <i class="fa-brands fa-css3-alt skills__icon"></i>
+          </li>
+          <li data-name="Javascript" class="skills_items js">
+            <div>
+              <h2 class="skills__title">Javascript</h2>
+              <span class="skills__years">8 years</span>
+            </div>
+            <i class="fa-brands fa-js skills__icon"></i>
+          </li>
+          <li data-name="React" class="skills_items">
+            <div>
+              <h2 class="skills__title">React</h2>
+              <span class="skills__years">3 years</span>
+            </div>
+            <i class="fa-brands fa-react skills__icon"></i>
+          </li>
+          <li data-name="python" class="skills_items">
+            <div>
+              <h2 class="skills__title">python</h2>
+              <span class="skills__years">1 years</span>
+            </div>
+            <i class="fa-brands fa-python skills__icon"></i>
+          </li>
+          <li data-name="React Testing Library" class="skills_items">
+            <div>
+              <h2 class="skills__title">React Testing <br />Library</h2>
+              <span class="skills__years">3 years</span>
+            </div>
+            <i class="fa-solid fa-book-open-reader skills__icon"></i>
+          </li>
+        </ul> -->
+      </section>
+      <section id="projects" class="project section">
+        <h2 class="h2-heading h2-heading__spaec">MY FEATURED<br />PROJECTS</h2>
+        <div class="projects__main">
+          <img
+            class="project__img"
+            src="images/project-1.jpg"
+            alt=""
+            loading="lazy"
+          />
+          <div class="projects__data">
+            <h3 class="h3-heading">
+              Quran Tab <br />
+              Extension
+            </h3>
+            <p class="project__description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
+              adipisci nihil ut, facere itaque excepturi nam quaerat veniam
+              optio laudantium.
+            </p>
+            <a href="#" class="project__links" target="_blank">Quran</a>
+            <span>-</span>
+            <a href="#" class="project__links" target="_blank">Edge link</a>
+          </div>
+          <div class="projects__data">
+            <h3 class="h3-heading">
+              Quran Stacion <br />
+              Extension
+            </h3>
+            <p class="project__description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
+              adipisci nihil ut, facere itaque excepturi nam quaerat veniam
+              optio laudantium.
+            </p>
+            <a href="#" class="project__links" target="_blank">Quran</a>
+            <span>-</span>
+            <a href="#" class="project__links" target="_blank">Firfox Link</a>
+            <span>-</span>
+            <a href="#" class="project__links" target="_blank">Edge link</a>
+          </div>
+          <img
+            class="project__img"
+            src="images/project-2.jpg"
+            alt=""
+            loading="lazy"
+          />
+        </div>
+      </section>
+      <section id="clients" class="clients section section--with-bg">
+        <h2 class="h2-heading h2-heading__spaec">
+          what my<br />
+          clients says
+        </h2>
+        <div class="clients__opinions">
+          <div class="clients__wraber">
+            <p class="clients__opinion">
+              Mostafa has the advantageous ability to understand a problem and
+              implement code to a high standard within the deadline. Each
+              project we have worked on, I know I can completely trust Mostafa
+              to own his tasks and complete what is needed when asked of him.
+            </p>
+            <p class="clients__opinion">
+              Mostafa will patiently listen to you and give you his own Ideas as
+              well, and in the end, he comes up with something completely
+              different from what you’re expecting, but the good news is, you’ll
+              always love it.
+            </p>
+            <p class="clients__opinion">
+              I had a chance to work closely with Mostafa as a direct manager
+              from hist first day at DeliveryHero until my last day there
+              (6+months). Motstafa's biggest strengths that I admire are taking
+              initiatives on personal and team level, and driving them.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section contact">
+        <div class="contact__info">
+          <p class="contact__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
+            cupiditate error vel molestias, non quo?
+          </p>
+          <a class="contact__email" href="mailto:example@gmail.com"
+            >Mostafa@gmail.com</a
+          >
+          <ul class="contant__nav">
+            <li>
+              <a
+                target="_blank"
+                href="https://facebook.com"
+                class="contant__linkes"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://youtube.com"
+                class="contant__linkes"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://tiwtter.com"
+                class="contant__linkes"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com"
+                class="contant__linkes"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://instagram.com"
+                class="contant__linkes"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://linkedin.com"
+                class="contant__linkes"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contant__formation">
+          <h2 class="h2-heading">
+            Let's Work<br />
+            Together!
+          </h2>
+          <form action="resul.html">
+            <div class="contant__form">
+              <input
+                class="contant__input"
+                type="text"
+                placeholder="FulName"
+                required
+                minlength="4"
+                maxlength="10"
+                name="name"
+                id="name"
+              />
+              <input
+                class="contant__input"
+                type="tel"
+                name="Numberphone"
+                id="phone"
+                placeholder="Phone No."
+                required
+                pattern="[0-9]{3}-[0-9]{4}-[0-9]{2}"
+              />
+            </div>
+            <textarea
+              name="massage"
+              id="massage"
+              class="contant__input contant__massage"
+              rows="1"
+              placeholder="Your Massage"
+              required
+            ></textarea>
+            <button class="contant__but" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+      <section class="cowndown">
+        <div class="comdown">
+          <h2 class="comdown__h2">We Are Opening Soon !</h2>
+          <div class="condown__flex">
+            <div class="condown__wait">
+              <span class="condown__day">day</span>
+              <h3 class="condown__conter">Day</h3>
+            </div>
+            <div class="condown__wait">
+              <span class="condown__hour">hour</span>
+              <h3 class="condown__conter">Hour</h3>
+            </div>
+            <div class="condown__wait">
+              <span class="condown__mount">mount</span>
+              <h3 class="condown__conter">Mount</h3>
+            </div>
+            <div class="condown__wait">
+              <span class="condown__secand">secand</span>
+              <h3 class="condown__conter">Secand</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        &copy; 2024 by Mostafa Magdy<br />
+
+        <a href="rquest.html" target="_blank">Rquest</a>
+      </footer>
+    </div>
+    <script src="script/challeng3.js"></script>
+  </body>
+</html>

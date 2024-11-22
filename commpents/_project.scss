@@ -1,0 +1,47 @@
+.projects__main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  row-gap: 100px;
+}
+.projects__data {
+  align-self: center;
+  background-color: var(--color-background);
+  padding: 30px 30px 0;
+  border-radius: 30px;
+  border-bottom: 1px solid #000;
+  transition: all 0.8s ease-in-out;
+}
+
+.project__data:hover {
+  border-bottom: 1px solid #000;
+  border-radius: 0 30px 0px 0;
+}
+.project__img {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+}
+
+.project__description {
+  margin-bottom: 30px;
+  max-width: 500px;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+.project__links {
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-family: var(--font-family-poppins);
+  color: var(--color-blue);
+  text-decoration: underline;
+  position: relative;
+  margin-right: 15px;
+}
+.project__links::after {
+  content: "";
+  position: absolute;
+  font-family: var(--font-awesome);
+  font-weight: 800;
+  font-size: 11px;
+  right: -15px;
+}
